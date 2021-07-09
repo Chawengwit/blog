@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+#sec1 {
+    width: auto;
+    height: 700px;
+    background-color: aquamarine;
+}
+
+#sec2 {
+    width: auto;
+    height: 700px;
+    background-color: palevioletred;
+}
+
