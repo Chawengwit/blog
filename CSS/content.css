@@ -1,0 +1,6 @@
+.content {
+    height: 100px;
+    transition: ease 1s;
+    border-radius: 30px;
+    padding-left: 2rem;
+}

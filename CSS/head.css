@@ -1,0 +1,19 @@
+header {
+    background-color: white; 
+    
+}
+header h1{
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.bg-img {
+    background-image: url("/img/1.jpg");
+    display: flex;
+    height: 525px;
+}
+.bg-img {
+    background-position: top;
+    background-repeat: no-repeat;
+}
