@@ -6,10 +6,19 @@
     text-align: center;
     line-height: 6;
     position: relative;
+    transition: 1s;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
     
 }
 
 .container-menu a {
     text-decoration: none;
     color: black;
+    border-radius: 30px;
+    
+}
+.container-menu a:hover {
+    background-color: whitesmoke;
 }

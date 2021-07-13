@@ -1,11 +1,12 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    position: inherit;
 }
 body html {
     height: 100%;
     width: auto;
-    margin: 0 auto;
+    margin: 0;
 }
 
 
