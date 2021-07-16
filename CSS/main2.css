@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #e5c8a8;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    background-color:white;
+    padding: 2rem;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
+    padding-left: 50px;
+    margin: 0;
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+}
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 70px 0 0;
+    text-align: left;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:hover {
+    opacity: 0.5;
+}
+
+.active {
+    display: flex;
+}
+
+main {
+    padding: 2rem;
+    background-color: thistle;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+aside {
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+article {
+    width: 70%;
+    height: 100%;
+    background-color: wheat;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: yellowgreen;
+    color: white;
+}
+
+@media screen and (max-width: 768px)  {
+    main {
+        flex-direction: column;
+        background-color: violet;
+    }
+
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: none;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    
+    ul li {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        border-bottom-style: none;
+        padding: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+
+
+    aside {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px)  {
+    main {
+        flex-direction: column;
+        background-color: tomato;
+    }
+    aside {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+}
+
