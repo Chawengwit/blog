@@ -45,7 +45,7 @@ nav {
 
 ul {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     width: 80%;
 }
 ul li {
@@ -73,6 +73,9 @@ ul li:hover {
 
 .active {
     display: flex;
+}
+.noneActive {
+    display: none;
 }
 
 main {
@@ -157,11 +160,44 @@ footer {
         flex-direction: column;
         background-color: tomato;
     }
+
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: none;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    
+    ul li {
+        display: inline-block;
+        margin: 0 15px 0 0;
+        text-align: left;
+        border-bottom-style: none;
+        padding: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+
+
     aside {
         width: 100%;
     }
     article {
         width: 100%;
     }
+    
 }
 

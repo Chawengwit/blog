@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    position: inherit;
+}
+body html {
+    height: 100%;
+    width: auto;
+    margin: 0;
+}
+
+
+footer {
+    float: end;
+    clear: both;
+    height:  50%;
+    background-color: #f3f3f3;
+}
+
+footer h1 {
+    padding-left: 30px; 
+}
