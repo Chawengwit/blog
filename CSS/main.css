@@ -42,12 +42,12 @@ nav {
     align-items: center;
     position: relative;
 }
-ul {
+nav ul {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-ul li {
+nav ul li {
     list-style-type: none;
     display: inline-block;
     font-size: 100%;
@@ -56,7 +56,7 @@ ul li {
     padding: 0;
     text-align: center;
 }
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: #bbbbbb;
 }
@@ -91,10 +91,46 @@ section {
     height: 50vh;
 }
 #section-about p {
-    text-indent: 10px;
     text-align: start;
 }
-  /* letter-spacing: 3px */
+
+#section-education {
+    background-color: #79799c;
+    width: 100%;
+    height: 50vh;
+}
+
+#section-education p {
+    text-align: start;
+}
+
+#section-experience {
+    background-color: #765c6e;
+    width: 100%;
+    height: 30vh;
+}
+
+#section-experience p {
+    text-indent: 10px
+}
+
+#section-skills {
+    background-color: slategrey;
+    width: 100%;
+    height: 50vh;
+}
+
+#section-skills ul {
+    justify-content: left;
+    width: auto;
+    list-style-type: none;
+}
+
+#section-other {
+    background-color: #bbbbbb;
+    width: 100%;
+    height: 50vh;
+}
 
 footer {
     margin: 0 auto;
@@ -120,7 +156,7 @@ footer {
         padding: 1rem;
     }
 
-    ul li {
+    nav ul li {
         font-size: 50%;
     }
 
@@ -138,24 +174,21 @@ footer {
     }
 
     #section-about {
-        height: 30vh;
+        height: 20vh;
     }
     #section-education {
-        background-color: #79799c;
-        width: 100%;
-        height: 30vh;
+        height: 15vh;
     }
 
     #section-experience {
-        background-color: #765c6e;
-        width: 100%;
         height: 30vh;
     }
 
     #section-skills {
-        background-color: slategrey;
-        width: 100%;
-        height: 25vh;
+        height: 50vh;
+    }
+    #section-other {
+        height: 30vh;
     }
 
     footer {
