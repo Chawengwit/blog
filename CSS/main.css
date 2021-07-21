@@ -11,28 +11,115 @@ body {
 }
 
 header {
-    background-color: #1a1a1f;
     width: 100%;
     height: 500px;
-}
-header h3 {
-    position: absolute;
-    z-index: 1;
-    color: #bbbbbb;
-    margin: 0 auto;
-    padding: 0.5rem;
-    font-size: 70%;
-}
-
-header img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
+    overflow: hidden;
     position: relative;
 }
 
-nav {
+.header-bg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 5px;
+    left: 15px;
+    top: 10px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.logo-profile {
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.logo-name {
+    width: 100%;
+    height: 15px;
+    margin: auto 0;
+    color: white;
+    font-size: 50%;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 10px;
+    left: 110px;
+    top: 10px;
+    position: absolute;
+}
+#header-topic {
+    color: white;
+    font-size: 70%;
+}
+.contact ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact ul li {
+    padding: 3px;
+    list-style-type: none;
+    font-size: 50%;
+}
+.contact ul li a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 10px;
+    left: 255px;
+    top: 10px;
+    position: absolute;
+}
+.follow ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.follow ul li {
+    padding: 3px;
+    list-style-type: none;
+    font-size: 80%;
+}
+.follow ul li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0 2px 0 0 ;
+}
+
+
+
+/* nav {
     background-color: #323142;
     height: 80px;
     display: flex;
@@ -59,36 +146,37 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #bbbbbb;
-}
+} */
 
 main {
-    padding: 2rem;
+    padding: 3%;
     background-color: white;
-    height: 100vh;
+    height: auto;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
     color: #1A2551;
+    font-size: 26px;
 }
 
 .main-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 90vh;
 }
-
-section {
-    width: 50%;
-    height: 25%;
+.left {
+    max-width: 65%;
+    height: 100%;
+}
+.right {
+    max-width: 35%;
+    height: 100%;
 }
 
 #section-about {
     background-color: #a58784;
-    width: 100%;
-    height: 50vh;
 }
 #section-about p {
     text-align: start;
@@ -96,8 +184,6 @@ section {
 
 #section-education {
     background-color: #79799c;
-    width: 100%;
-    height: 50vh;
 }
 
 #section-education p {
@@ -106,18 +192,16 @@ section {
 
 #section-experience {
     background-color: #765c6e;
-    width: 100%;
-    height: 30vh;
 }
 
 #section-experience p {
-    text-indent: 10px
+    text-indent: 3%;
 }
 
 #section-skills {
     background-color: slategrey;
     width: 100%;
-    height: 50vh;
+    height: 60%;
 }
 
 #section-skills ul {
@@ -126,76 +210,36 @@ section {
     list-style-type: none;
 }
 
-#section-other {
+#section-hobbies {
     background-color: #bbbbbb;
     width: 100%;
-    height: 50vh;
+    height: 40%;
+}
+#section-hobbies h3 {
+    width: 100%;
+    font-size: 100%;
+}
+
+#section-hobbies ul {
+    display: flex;
+    flex-direction: column ;
+    list-style-type: none;
+}
+#section-hobbies ul li  {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    margin: 0 10px 0 0;
+}
+.icon-name {
+    margin: 5px ;
 }
 
 footer {
     margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    justify-content: center;
+    padding: 0;
     background-color: #323142;
     color: #bbbbbb;
-}
-
-@media screen and (max-width:480px) {
-    header {
-        height: 250px;
-    }
-
-    header img {
-        width: 100%;
-        height: auto;
-    }
-
-    nav {
-        height: 40px;
-        padding: 1rem;
-    }
-
-    nav ul li {
-        font-size: 50%;
-    }
-
-    main {
-        padding: 1rem;
-        height: auto;
-    }
-
-    section {
-        padding: 0.5rem;
-    }
-    
-    section div p {
-        font-size: 50%;
-    }
-
-    #section-about {
-        height: 20vh;
-    }
-    #section-education {
-        height: 15vh;
-    }
-
-    #section-experience {
-        height: 30vh;
-    }
-
-    #section-skills {
-        height: 50vh;
-    }
-    #section-other {
-        height: 30vh;
-    }
-
-    footer {
-        height: 30px;
-        padding: 0.5rem;
-    }
-    footer h3 {
-        font-size: 70%;
-    }
+    width: 100%;
 }

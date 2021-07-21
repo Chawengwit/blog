@@ -1,0 +1,42 @@
+@media screen and (min-width:768px) {
+    body {
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        height: auto;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    header img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    main {
+        padding: 3%;
+        height: 724px;
+    }
+
+    section {
+        padding: 3%;
+    }
+    
+    section div p {
+        font-size: 50%;
+    }
+    .icon {
+        margin: 5px 10px 0 0;
+        font-size: 90%;
+    }
+    .icon-name {
+        margin: 10px 0 0 0 ;
+    }
+
+    footer {
+        position: absolute;
+        height: 100px;
+        bottom: 0px;
+    }
+}

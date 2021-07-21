@@ -1,0 +1,61 @@
+@media screen and (max-width:414px) {
+    body {
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        height: auto;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    header img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    main {
+        padding: 15px;
+        height: 569px;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+    
+    section div p {
+        font-size: 50%;
+    }
+
+    #section-about {
+        height: auto;
+    }
+    #section-education {
+        height: auto;
+    }
+
+    #section-experience {
+        height: auto;
+    }
+
+    #section-skills {
+        height: auto;
+    }
+    #section-hobbies {
+        height: auto;
+    }
+
+    .icon {
+        margin: 5px 10px 0 0;
+        font-size: 90%;
+    }
+    .icon-name {
+        margin: 10px 0 0 0 ;
+    }
+
+    footer {
+        position: absolute;
+        height: 67px;
+        bottom: 0px;
+    }
+}
